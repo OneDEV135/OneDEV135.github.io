@@ -3,38 +3,35 @@
     <title>OneDEV Home</title>
     <link rel="icon" href="https://onedev-135.github.io/resources/images/OneDEV_2.0.png">
     <style>
-        @import url('http://fonts.cdnfonts.com/css/samsung-sharp-sans');
-        @import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
 
-        /* Navigation bar starts here */
+        /* Fonts */
+        @font-face{font-family: 'Samsung Sharp Sans regular';font-style: normal; src: url(https://onedev-135.github.io/resources/fonts/samsungsharpsans.ttf)}
+        @font-face{font-family:'Samsung Sharp Sans';font-style:bold;src:url(https://onedev-135.github.io/resources/fonts/samsungsharpsans-bold.otf);}
+        @font-face {font-family: 'Google Sans';src: url(https://onedev-135.github.io/resources/fonts/ProductSans-Light.ttf);}
 
-        /* navlist style */
-        /* #navlist {background-color: black;position: fixed;width: 100%} */
-        /* navlist anchor elem */
-        /* #navlist a {float: right;display: block;color: white;text-align: center;padding: 25px;text-decoration: none;font-size: 15px} */
-        /* .navlist-right{float: right;} */
-        /* #navlist b {float: left;color: white;text-align: center;padding: 20px;text-decoration: none;font-size: 25px;} */
-        /* hover effect */
-        /* #navlist a:hover{background-color: lightgrey;color: black} */
-        body{margin: 0;padding: 0;font-family: "Samsung Sharp Sans", sans-serif;background-color: black;user-select: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;}
+        /* Styles */
+        body{margin: 0;padding: 0;font-family: "Samsung Sharp Sans", sans-serif;background-color: black;/* overflow-y: scroll; */}
         body ::selection{color: black;background: white;} body ::-moz-selection{color: black;background: white;}
         header{background-color: black;}
-        /* a{color: white;} */
-        .main-nav{height: 70px;position: relative;z-index: 10;}
+        .main-nav{height: 70px;position: relative;z-index: 10;user-select: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;}
         .logo{color: white;line-height: 70px;font-size: 40px;font-weight: bold;text-decoration: none;margin-left: 25px;transition:all 0.25s;}
         .logo:hover{color: lightgrey;}
         .navlinks{list-style: none;float: right;line-height: 70px;margin: 0px;padding: 0;}
         .navlinks li{display: inline-block;margin: 0 30px;font-size: 20px;}
-        .navlinks li a{color: white;text-decoration: none;padding: 15px;transition: all 0.25s;border-radius: 12px;}
+        .navlinks li a{color: white;text-decoration: none;padding: 15px;transition: all 0.25s;border-radius: 12px;font-family:'Samsung Sharp Sans regular';}
         .navlinks li a:hover{color: black;background-color: white;}
         .menu-btn{color: white;font-size: 40px;float: right;line-height: 70px;margin-right: 30px;cursor: pointer;display: none;}
         #isChecked{display: none;}
+        .body-content{font-size: 70px;color:white;text-align: center;top: 45%;position: absolute;transform: translate(-50%, -50%);left: 50%;user-select: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;}
+        .body-content p{font-size: 35px;font-family: 'Google Sans','Samsung Sharp Sans regular',sans-serif;}
+        .body-content h1{border-bottom: 5px;padding:none;}
+        .others{color: white;font-family: 'Google Sans';font-size: 25px;}
+
+        /* @ Media */
         @media (max-width:908px){.navlinks{/*overflow-x: hidden;*/position: fixed;width: 100%;height: 100vh;text-align: center;background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,0,107,1) 100%);right: -100%;transition: all 0.25s;}.navlinks li{display: block;}.navlinks li a{font-size: 25px;}.menu-btn{display: block;}#isChecked:checked ~ .navlinks{right: 0;}}
         @media (max-width:245px){.logo{margin-left: 10px;font-size: 25px;}.menu-btn{margin-right: 10px;font-size: 20px;}}
-        .body-content{font-size: 70px;color:white;text-align: center;top: 45%;position: absolute;transform: translate(-50%, -50%);left: 50%;}
-        .body-content p{font-size: 25px;font-family: 'Google Sans';}
-        .body-content h1{border-bottom: 5px;padding:none;}
-        .proj{color: white; bottom: 100%;/*  margin-left: 20%; overflow: scroll; */}
+
+
 </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -48,7 +45,7 @@
             <label for="isChecked" class="menu-btn">
                 <i class="fa fa-bars"></i>
             </label>
-            <a href="#" class="logo">OneDEV</a>
+            <a href="https://onedev-135.github.io" class="logo">OneDEV</a>
             <ul class="navlinks">
                 <li><a href="#">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -61,18 +58,18 @@
 
     <!-- Body starts here -->
     <article>
-        <nav class="body-content">
+        <div class="body-content">
             <h1>One Developer
                 <!-- <span style=font-size:19px;border-top:10px;>That makes cool projects</span> -->
             </h1>
             <!-- <p>That is bored and making simple but cool looking projects.</p> -->
             <p>That makes cool projects</p>
-        </nav>
+        </div>
     </article>
-    <section></section>
-<!--     <div class="proj" id="projects">
-        <h2>Projects</h2>
-        <p>projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. projects. </p>
-    </div> -->
-    <!-- Body ends here -->
+    <article class="others">
+        <div class="projects">
+            <h1>Projects</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nibh nunc, euismod nec urna sit amet, facilisis dictum elit. Ut imperdiet nunc enim, eu blandit sem malesuada at. Aenean blandit erat nec felis egestas sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce consequat libero id lectus vestibulum pretium. Cras aliquam mi lorem, sed varius lacus mattis eu. Nam a risus laoreet, rutrum tortor at, auctor orci. Praesent odio tortor, viverra eu aliquet ac, varius in tortor. Curabitur luctus neque eu dapibus faucibus.</p>
+        </div>
+    </article>
 </body>
