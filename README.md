@@ -1,4 +1,4 @@
 # OneDEV135.github.io
-One developer that makes cool projects. 
+> a *\*bored\** guy who makes stuff
 
-a *\*bored\** guy who makes stuff
+My website is under maintenance, i don't even know if i will fix it or not. :P
