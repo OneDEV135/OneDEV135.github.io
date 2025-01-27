@@ -4,7 +4,7 @@
 
 My website is under maintenance, i don't even know if i will fix it or not. :P
 
-You can see how it looks like by going to [/not_index.html](https://onedev135.github.io/not_index.html).
+You can see how it currently looks by going to [/not_index.html](https://onedev135.github.io/not_index.html).
 
 ---
 
