@@ -3,6 +3,11 @@
 @font-face{font-family:'Samsung Sharp Sans';font-style:bold;src:url(https://onedev135.github.io/resources/fonts/samsungsharpsans-bold.otf);}
 @font-face{font-family: 'Product Sans';src: url(https://onedev135.github.io/resources/fonts/ProductSans-Light.ttf);}
 
+/* @font-face{font-family: 'Urbanist'; font-style: normal; src: url(/resources/fonts/Urbanist/static/Urbanist-Regular.ttf);}
+@font-face{font-family: 'Urbanist'; font-style: bold; src: url(/resources/fonts/Urbanist/static/Urbanist-Bold.ttf);} */
+@font-face{font-family: 'Urbanist'; src: url(/resources/fonts/Urbanist/Urbanist-VariableFont_wght.ttf);}
+@font-face{font-family: 'Outfit'; src: url(/resources/fonts/Outfit/Outfit-VariableFont_wght.ttf);}
+
 /* Styles */
 :root{
     --light-gradient: linear-gradient(90deg, rgb(0, 255, 90) 0%, rgb(0,255,230) 100%);
@@ -14,7 +19,9 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: "Samsung Sharp Sans", sans-serif;
+    font-family: "Urbanist", sans-serif;
+    font-variation-settings: 'wght' 700;
+    /* font-weight: 800; */
     /* background-color: black; */
     /* overflow-y: scroll; */
     background: var(--dark-gradient);
@@ -58,10 +65,13 @@ body ::-moz-selection{
     -moz-user-select: none;
     -ms-user-select: none;}
 .logo{
+    font-family: Urbanist;
     color: white;
     line-height: 1.5cm;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    font-variation-settings: 'wght' 800;
+    letter-spacing: -.5px;
     text-decoration: none;
     margin-left: 25px;
     transition:all 0.25s;
@@ -133,18 +143,18 @@ main{
     font-size: 35px;
     font-family: 'Product Sans',sans-serif;
 }
+.content{
+    font-family: 'Product Sans',sans-serif;
+    margin: 2cm;
+}
 .projects{
     color: white;
     background-color: rgb(0, 0, 0);
-    font-family: 'Product Sans';
     font-size: 25px;
     position: absolute;
     top: 100vh;
     height: 100vh;
     border: 0;
-}
-.content{
-    margin: 2cm;
 }
 
 /* @ Media */
